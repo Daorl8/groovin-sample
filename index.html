@@ -210,7 +210,9 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
 .mapframe{ width:100%; aspect-ratio:4/3; border:2.5px solid var(--ink); border-radius:10px 16px 8px 18px / 18px 8px 16px 10px; display:block; background:var(--map-bg); }
 
 /* ---------- 푸터 ---------- */
-.foot{ margin-top:clamp(80px,12vw,140px); border-top:2.5px solid var(--ink); padding:40px 0 52px; text-align:center; }
+.foot{ margin-top:clamp(80px,12vw,140px); border-top:2.5px solid var(--ink); padding:40px 0 52px; text-align:center; background:var(--card); } /* 푸터는 무늬 없이 흰 종이 */
+.ko-sub{ display:block; font-family:var(--ko); font-size:1.02rem; line-height:1.55; color:var(--ink-soft); margin-top:4px; }
+p.ko-sub{ margin:6px 0 0; max-width:36em; }
 .foot img{ width:120px; margin:0 auto 6px; }
 .foot .name{ font-family:var(--head); font-size:2rem; }
 .foot p{ margin:4px 0; font-size:.92rem; color:var(--ink-soft); }
@@ -295,6 +297,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
         <span class="kicker">must try!</span>
         <h2 id="menu-h">Our <span class="hl">signatures</span></h2>
         <p class="intro">Three things we would order first if we were you.</p>
+        <p class="ko-sub">처음 오셨다면 이 세 가지부터 드셔보세요.</p>
       </div>
       <div class="sig">
         <article class="reveal" style="--r:-2deg">
@@ -303,7 +306,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
             <img loading="lazy" src="gv-fruitsando.webp" alt="Yogurt fruit sando cut open showing orange, kiwi, grape and strawberry" width="675" height="900" />
             <figcaption>Yogurt Fruit Sando <small>요거트 후르츠산도</small></figcaption>
           </figure>
-          <p>Tangy yogurt cream and lots of fresh fruit. Light, but it fills you up. Our most photographed menu.</p>
+          <p>Tangy yogurt cream and lots of fresh fruit. Light, but it fills you up. Our most photographed menu.<span class="ko-sub">상큼한 요거트 크림과 신선한 과일이 듬뿍. 가볍지만 든든하고, 사진을 가장 많이 남기는 인기 메뉴예요.</span></p>
         </article>
         <article class="reveal" style="--r:1.5deg">
           <p class="num">02</p>
@@ -311,7 +314,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
             <img loading="lazy" src="gv-bagel-pistachio.webp" alt="Two halves of a bagel sando packed with thick cream and crunchy topping" width="900" height="900" />
             <figcaption>Bagel Sando <small>베이글산도</small></figcaption>
           </figure>
-          <p>Several kinds, all stuffed with rich cream and fillings. The cream and the bagel just get along.</p>
+          <p>Several kinds, all stuffed with rich cream and fillings. The cream and the bagel just get along.<span class="ko-sub">진한 크림과 재료가 가득 들어간 여러 종류의 베이글산도.</span></p>
         </article>
         <article class="reveal" style="--r:-1deg">
           <p class="num">03</p>
@@ -319,7 +322,7 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
             <img loading="lazy" src="gv-frenchtoast-berry.webp" alt="Butter french toast topped with strawberries and powdered sugar" width="720" height="900" />
             <figcaption>Butter French Toast <small>버터 프렌치토스트</small></figcaption>
           </figure>
-          <p>Crisp outside, soft inside, deep butter flavor. A dessert, or a small brunch.</p>
+          <p>Crisp outside, soft inside, deep butter flavor. A dessert, or a small brunch.<span class="ko-sub">겉은 바삭, 속은 촉촉. 깊은 버터 향의 디저트이자 가벼운 브런치.</span></p>
         </article>
       </div>
     </div>
@@ -331,18 +334,19 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
       <div class="sec-top">
         <span class="kicker">from the counter</span>
         <h2 id="more-h">What else is <span class="squig">cooking<svg aria-hidden="true" style="color:var(--red)"><use href="#wave"/></svg></span></h2>
+        <p class="ko-sub">계절마다 바뀌는 그루빙의 디저트들</p>
       </div>
       <div class="board">
-        <figure class="pola reveal" style="--r:-2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-frenchtoast.webp" alt="Dark french toast with a scoop of cream and berries next to an iced coffee" width="821" height="900" /><figcaption>French toast + coffee</figcaption></figure>
-        <figure class="pola reveal" style="--r:1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-strawberry.webp" alt="Bagel sando filled with cream and whole strawberries" width="777" height="900" /><figcaption>Strawberry bagel sando</figcaption></figure>
-        <figure class="pola reveal" style="--r:-1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-blueberry.webp" alt="Two bagel sandos with purple cream and blueberries" width="814" height="900" /><figcaption>Blueberry bagel sando</figcaption></figure>
-        <figure class="pola reveal" style="--r:2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-strawberry-cake.webp" alt="Round cake piled high with strawberries and blueberries" width="720" height="900" /><figcaption>Strawberry cake</figcaption></figure>
-        <figure class="pola reveal" style="--r:1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-strawberry-cup.webp" alt="Dessert cup layered with cream and strawberries" width="824" height="900" /><figcaption>Strawberry cup</figcaption></figure>
-        <figure class="pola reveal" style="--r:-2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-frenchtoast-choco.webp" alt="French toast drizzled with chocolate sauce" width="675" height="900" /><figcaption>Choco french toast</figcaption></figure>
-        <figure class="pola reveal" style="--r:1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-crumble.webp" alt="Stacked crumble bars with an orange layer" width="720" height="900" /><figcaption>Crumble bar</figcaption></figure>
-        <figure class="pola reveal" style="--r:-1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-matcha.webp" alt="Green bagel sandos filled with cream and strawberries, lined up" width="708" height="900" /><figcaption>Green bagel sando</figcaption></figure>
+        <figure class="pola reveal" style="--r:-2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-frenchtoast.webp" alt="Dark french toast with a scoop of cream and berries next to an iced coffee" width="821" height="900" /><figcaption>French toast + coffee <small>프렌치토스트와 커피</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-strawberry.webp" alt="Bagel sando filled with cream and whole strawberries" width="777" height="900" /><figcaption>Strawberry bagel sando <small>딸기 베이글산도</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:-1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-blueberry.webp" alt="Two bagel sandos with purple cream and blueberries" width="814" height="900" /><figcaption>Blueberry bagel sando <small>블루베리 베이글산도</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-strawberry-cake.webp" alt="Round cake piled high with strawberries and blueberries" width="720" height="900" /><figcaption>Strawberry cake <small>딸기 케이크</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-strawberry-cup.webp" alt="Dessert cup layered with cream and strawberries" width="824" height="900" /><figcaption>Strawberry cup <small>딸기 컵 디저트</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:-2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-frenchtoast-choco.webp" alt="French toast drizzled with chocolate sauce" width="675" height="900" /><figcaption>Choco french toast <small>초코 프렌치토스트</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-crumble.webp" alt="Stacked crumble bars with an orange layer" width="720" height="900" /><figcaption>Crumble bar <small>크럼블 바</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:-1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-bagel-matcha.webp" alt="Green bagel sandos filled with cream and strawberries, lined up" width="708" height="900" /><figcaption>Green bagel sando <small>그린 베이글산도</small></figcaption></figure>
       </div>
-      <p class="note">The lineup changes with the season. Check <a href="https://www.instagram.com/cafe_groovin/" target="_blank" rel="noopener">@cafe_groovin</a> for this week, or grab sets for delivery on our <a href="https://smartstore.naver.com/groovin_busan" target="_blank" rel="noopener">smartstore</a>.</p>
+      <p class="note">The lineup changes with the season. Check <a href="https://www.instagram.com/cafe_groovin/" target="_blank" rel="noopener">@cafe_groovin</a> for this week, or grab sets for delivery on our <a href="https://smartstore.naver.com/groovin_busan" target="_blank" rel="noopener">smartstore</a>.<span class="ko-sub">메뉴는 계절에 따라 바뀌어요. 이번 주 메뉴는 인스타그램에서, 택배 주문은 스마트스토어에서 확인하세요.</span></p>
     </div>
   </section>
 
@@ -352,16 +356,17 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
       <div class="reveal">
         <figure class="pola" style="max-width:420px;transform:rotate(-2deg)"><span class="tape" aria-hidden="true"></span>
           <img loading="lazy" src="gv-latte.webp" alt="Iced latte in a ribbed glass on a round table" width="720" height="900" />
-          <figcaption>Iced latte</figcaption>
+          <figcaption>Iced latte <small>아이스 라떼</small></figcaption>
         </figure>
       </div>
       <div class="duo-text reveal">
         <span class="kicker">serious about beans</span>
         <h2 id="coffee-h">Coffee that <span class="hl">gets</span> dessert</h2>
         <p class="intro">We pick our beans for aroma and balance, and keep tasting until they sit right next to our desserts. Sweet sando with nutty coffee, french toast with a soft latte. Mix and match.</p>
+        <p class="ko-sub">향과 밸런스를 고려해 고른 원두로, 디저트와 가장 잘 어울리는 맛을 연구합니다.</p>
         <div class="dog-row">
           <img loading="lazy" src="gv-dog.webp" alt="" width="1008" height="580" />
-          <p class="bubble">Look for me on<br />your dessert cup!</p>
+          <p class="bubble">Look for me on<br />your dessert cup!<span class="ko-sub" style="color:var(--ink)">디저트 컵에서 저를 찾아보세요!</span></p>
         </div>
         <figure class="pola" style="max-width:300px;margin-top:8px;transform:rotate(2deg)"><span class="tape" aria-hidden="true"></span>
           <img loading="lazy" src="gv-dogcups.webp" alt="Rows of strawberry dessert cups, each lid with the GROOVIN' dog sticker" width="720" height="900" />
@@ -377,16 +382,17 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
         <span class="kicker">stay a while</span>
         <h2 id="space-h">A place to <span class="hl">hang out</span></h2>
         <p class="intro">Warm lights, cozy corners and seats that make every photo look good. Come with a friend, on a date, or just by yourself.</p>
+        <p class="ko-sub">따뜻한 조명과 아늑한 공간, 사진이 예쁘게 나오는 자리. 친구, 연인, 혼자서도 편하게 쉬어가세요.</p>
       </div>
       <div class="space">
-        <figure class="pola reveal" style="--r:-1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-door.webp" alt="Glass front door with an OPEN sign, plants and a wooden chair outside" width="1080" height="1080" /><figcaption>The front door</figcaption></figure>
-        <figure class="pola reveal" style="--r:2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-alley.webp" alt="Narrow alley with a yellow awning, wooden fence and outdoor chairs" width="720" height="900" /><figcaption>Down the alley</figcaption></figure>
-        <figure class="pola reveal" style="--r:-1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-inside.webp" alt="Inside the café with a wooden table, black chairs and terracotta floor" width="900" height="900" /><figcaption>Inside</figcaption></figure>
+        <figure class="pola reveal" style="--r:-1.5deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-door.webp" alt="Glass front door with an OPEN sign, plants and a wooden chair outside" width="1080" height="1080" /><figcaption>The front door <small>입구</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:2deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-alley.webp" alt="Narrow alley with a yellow awning, wooden fence and outdoor chairs" width="720" height="900" /><figcaption>Down the alley <small>골목길</small></figcaption></figure>
+        <figure class="pola reveal" style="--r:-1deg"><span class="tape" aria-hidden="true"></span><img loading="lazy" src="gv-inside.webp" alt="Inside the café with a wooden table, black chairs and terracotta floor" width="900" height="900" /><figcaption>Inside <small>매장 안</small></figcaption></figure>
       </div>
       <ul class="tick">
-        <li><svg aria-hidden="true"><use href="#tick"/></svg>Looking for a cozy café in Jeonpo</li>
-        <li><svg aria-hidden="true"><use href="#tick"/></svg>Craving dessert that is actually good</li>
-        <li><svg aria-hidden="true"><use href="#tick"/></svg>Planning a date, or a quiet hour alone</li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Looking for a cozy café in Jeonpo<span class="ko-sub">분위기 좋은 전포 카페를 찾는 분</span></li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Craving dessert that is actually good<span class="ko-sub">맛있는 디저트가 먹고 싶은 분</span></li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Planning a date, or a quiet hour alone<span class="ko-sub">데이트, 혹은 혼자만의 조용한 시간이 필요한 분</span></li>
       </ul>
     </div>
   </section>
@@ -398,16 +404,17 @@ h1,h2,h3{ font-family:var(--head); font-weight:400; margin:0; line-height:1.05; 
         <span class="kicker">come say hi</span>
         <h2 id="visit-h">Find <span class="squig">GROOVIN'<svg aria-hidden="true" style="color:var(--red)"><use href="#wave"/></svg></span></h2>
         <p class="intro">Walk toward Jeonpo café street and look for the butter lemon storefront.</p>
+        <p class="ko-sub">전포 카페거리 방향으로 걷다 보면 버터레몬톤 외관의 그루빙이 보여요.</p>
       </div>
       <div class="visit-grid">
         <div class="reveal">
           <div class="card">
             <dl class="info">
-              <div class="row"><dt>Where</dt><dd><span class="ko">부산 부산진구 동성로25번길 27-4 1층</span><small>Jeonpo Station (Line 2) exit 4 or 6, about 3 min on foot</small></dd></div>
-              <div class="row"><dt>Hours</dt><dd>12pm to 8pm<small>Last order 7:30pm · Closed every Tuesday</small></dd></div>
-              <div class="row"><dt>Call</dt><dd><a href="tel:050713583517" style="border-bottom:2px solid var(--lemon)">0507 1358 3517</a></dd></div>
-              <div class="row"><dt>Bus</dt><dd>Seomyeon Hanjeon, Bujeon Library, Dongseong Elementary or Busanjin Girls' Middle School stop<small>3 to 5 min walk toward the café street</small></dd></div>
-              <div class="row"><dt>Car</dt><dd>Jeonpo Station underground parking<small>3 to 4 min walk from there</small></dd></div>
+              <div class="row"><dt>Where</dt><dd><span class="ko">부산 부산진구 동성로25번길 27-4 1층</span><small>Jeonpo Station (Line 2) exit 4 or 6, about 3 min on foot</small><span class="ko-sub">전포역 4번·6번 출구에서 도보 약 3분</span></dd></div>
+              <div class="row"><dt>Hours</dt><dd>12pm to 8pm<small>Last order 7:30pm · Closed every Tuesday</small><span class="ko-sub">낮 12시 ~ 저녁 8시 · 라스트오더 7시 30분 · 매주 화요일 휴무</span></dd></div>
+              <div class="row"><dt>Call</dt><dd><a href="tel:050713583517" style="border-bottom:2px solid var(--lemon)">0507 1358 3517</a><span class="ko-sub">전화 문의</span></dd></div>
+              <div class="row"><dt>Bus</dt><dd>Seomyeon Hanjeon, Bujeon Library, Dongseong Elementary or Busanjin Girls' Middle School stop<small>3 to 5 min walk toward the café street</small><span class="ko-sub">서면한전앞, 부전도서관, 동성초등학교, 부산진여자중학교 정류장 하차 후 도보 3~5분</span></dd></div>
+              <div class="row"><dt>Car</dt><dd>Jeonpo Station underground parking<small>3 to 4 min walk from there</small><span class="ko-sub">전포역 지하주차장 이용 후 도보 3~4분</span></dd></div>
             </dl>
           </div>
           <div class="acts">
