@@ -52,13 +52,13 @@
 </script>
 
 <!-- Fonts (전부 OFL · 로컬 서브셋 self-host)
-     제목 = Caveat Brush (매직펜 낙서) / 본문 = Shantell Sans (마커 손글씨, 400·700 고정 인스턴스) / 한글 = Poor Story -->
+     제목 = Caveat Brush (매직펜 낙서) / 본문 = Shantell Sans (마커 손글씨, 400·700 고정 인스턴스) / 한글 = Pretendard (v0.5부터, 다올 지정) -->
 <link rel="preload" as="font" type="font/woff2" href="gv-caveatbrush.woff2" crossorigin />
 <style>
 @font-face{ font-family:"Caveat Brush"; font-weight:400; font-display:swap; src:url("gv-caveatbrush.woff2") format("woff2"); }
 @font-face{ font-family:"Shantell Sans"; font-weight:400; font-display:swap; src:url("gv-shantell-400.woff2") format("woff2"); }
 @font-face{ font-family:"Shantell Sans"; font-weight:700; font-display:swap; src:url("gv-shantell-700.woff2") format("woff2"); }
-@font-face{ font-family:"Poor Story"; font-weight:400; font-display:swap; src:url("gv-poorstory.woff2") format("woff2"); }
+@font-face{ font-family:"Pretendard"; font-weight:400; font-display:swap; src:url("gv-pretendard.woff2") format("woff2"); }
 
 /* ============================================================
    GROOVIN' · "낙서장"
@@ -85,10 +85,10 @@
   --on-dark:#FFFFFF;
   /* 배경 낙서 무늬: 360px 타일 (별·하트·물결·체크·커피잔·버터 토스트·딸기·소용돌이·점). 연회색 선이라 글 가독성에 영향 거의 없음 */
   --pattern:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360' viewBox='0 0 360 360'%3E%3Cg fill='none' stroke='%23E2E2E2' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath transform='translate(28 30) rotate(-12 14 14)' d='M14 1.5l3.4 8.6 9.2.5-7.2 5.9 2.5 9-7.9-5.2-7.9 5.2 2.5-9-7.2-5.9 9.2-.5z'/%3E%3Cpath transform='translate(232 26) rotate(10 14 14)' d='M14 25s-9.5-6-11.6-12C1 8.7 4.2 4.4 8.4 4.8c2.4.3 4.2 1.8 5.6 4 1.5-2.2 3.4-3.8 5.9-4.1 4.3-.3 7.2 4 5.6 8.4C23.4 19 14 25 14 25z'/%3E%3Cpath d='M120 118c10-8 18 8 28 0s18 8 28 0 18 8 28 0'/%3E%3Cg transform='translate(282 170) rotate(6)'%3E%3Cpath d='M2 14h30v14a12 12 0 0 1-12 12h-6A12 12 0 0 1 2 28z'/%3E%3Cpath d='M32 18h4a6 6 0 0 1 0 12h-4'/%3E%3Cpath d='M12 9c-3-3 3-5 0-8M21 9c-3-3 3-5 0-8'/%3E%3C/g%3E%3Cg transform='translate(46 206) rotate(-8)'%3E%3Cpath d='M6 46V20C-2 18 0 2 14 3c6-3 16-3 22 0 14-1 16 15 8 17v26z'/%3E%3Crect x='17' y='22' width='14' height='11' rx='2' fill='%23F6E7A1' stroke='%23E8D78A'/%3E%3C/g%3E%3Cg transform='translate(176 232) rotate(14)' stroke='%23EDC4BF'%3E%3Cpath d='M14 36C4 30 0 20 2 12c2-6 8-8 12-6 4-2 10 0 12 6 2 8-2 18-12 24z'/%3E%3Cpath d='M8 4c2 2 4 3 6 2 2 1 4 0 6-2'/%3E%3Cpath d='M9 16h.1M19 16h.1M14 24h.1M9 28h.1M19 27h.1' stroke-width='3'/%3E%3C/g%3E%3Cpath d='M338 330l0 14M331 337h14M330 330l15 14M345 330l-15 14' stroke-width='1.8'/%3E%3Cpath d='M120 30h.1M310 96h.1M96 150h.1M240 320h.1M30 120h.1M330 270h.1' stroke-width='5'/%3E%3Cpath d='M22 330c0-10 14-10 14 0s-20 12-22 0 10-22 24-14'/%3E%3Cpath d='M226 128l6 8 12-14'/%3E%3Ccircle cx='118' cy='326' r='9'/%3E%3Cpath d='M300 300l10 6M300 312l10-6' stroke-width='1.8'/%3E%3C/g%3E%3C/svg%3E");
-  --head:"Caveat Brush", "Poor Story", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --body:"Shantell Sans", "Poor Story", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --ko:"Poor Story", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  --ko-size:1.1rem;
+  --head:"Caveat Brush", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --body:"Shantell Sans", "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --ko:"Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --ko-size:1rem;
   --maxw:1140px;
   --gut:clamp(20px,5vw,44px);
   --wobble:255px 15px 225px 15px / 15px 225px 15px 255px;   /* 손그림 테두리 */
