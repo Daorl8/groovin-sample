@@ -1,0 +1,16 @@
+.git
+.git/**
+wrangler.toml
+.assetsignore
+README.md
+CHANGELOG.md
+STRUCTURE.md
+img
+img/**
+index_*.html
+gv-dog.png
+gv-bagel-mango.webp
+gv-bake.webp
+gv-fruitsando-cafe.webp
+gv-sando-plate.webp
+gv-table.webp
